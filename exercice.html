@@ -11,7 +11,48 @@
 <body>
 
     <h2>Nombre del Cliente</h2>
-    <input type="text">
+    <input id="text1" type="text" style="width: 250px">
+    <br>
+
+    <label for="box-types">Material de la caja:</label>
+    <select name="box-types" id="box-types">
+        <option class="typebox" value="madera">Madera</option>
+        <option class="typebox" value="carton">Carton</option>
+        <option class="typebox" value="hierro">Hierro</option>
+        <option class="typebox" value="plastico">Plastico</option>
+    </select>
+    <br>
+    <br>
+
+    <form method="get" action="">
+
+        Seleccione una dimension para la caja:
+
+        <br />
+
+        <input id="small" name="intereses" type="radio" value="rbipequeña" />Diminuta
+
+        <br />
+
+        <input id="med" name="intereses" type="radio" value="rbimediana" />Mediana
+
+        <br />
+
+        <input id="big" name="intereses" type="radio" value="rbigrande" />Grande
+
+    </form>
+    <br>
+
+    <form>
+        Comentarios
+        <br>
+        <textarea name="comment" rows=5 cols=40></textarea>
+    </form>
+    <br>
+
+    <button>ENVIAR</button>
+    <input class="inf" type="text" style="width: 700px" placeholder="informacion recibida">
+
 
 
     <script src="./main.js"></script>
